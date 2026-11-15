@@ -1,3 +1,24 @@
+# sso-shiro-cas · 收藏的 Shiro + CAS 单点登录示例（fork 存档，不是自己写的）
+
+> 2026-11-15 补写说明：这个仓库 fork 自别人的开源项目，代码原作者不是本人。下面是上游原版 README。
+
+## 一句话
+Spring 环境下用 Shiro + CAS 实现单点登录（SSO）的完整示例，包含 CAS 服务端。
+
+## 里面有什么
+- `cas/`：CAS Server 的 webapp（`org.jasig.cas`），单点登录的认证中心
+- 配套的业务应用：登录一次，多个应用共享会话
+
+## 来源
+- 上游：`tinybyhuang/sso-shiro-cas`（描述原文：spring下使用shiro+cas配置单点登录）
+- 仓库内最早的提交可追到 2016 年，属于上游原作者的历史
+- 当年 fork 的目的：理解 CAS 协议的登录跳转链路（TGT / ST 票据）
+
+## 现在还有用吗
+CAS 协议本身仍是很多政企/高校系统的 SSO 标准，作为「票据怎么传」的实物样本有参考价值；新项目多数会选 OAuth2 / OIDC。
+
+---
+
 # sso-shiro-cas
 spring下使用shiro+cas配置单点登录，多个系统之间的访问，每次只需要登录一次
 
